@@ -1,2 +1,3 @@
-# pjp-algoritmos
-Programa Jovem Potiguar - Disciplina de Introdução à Lógica e Algoritmos
+# Programa Jovem Potiguar
+Disciplina: Introdução à Lógica e Algoritmos
+Professor: Givanaldo Rocha
