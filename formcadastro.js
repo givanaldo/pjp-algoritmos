@@ -10,11 +10,11 @@ function cadastrar() {
   const preferencias = Array.from(checkboxes).map(cb => cb.value);
 
   const html = `
-      <h3>Dados Recebidos</h3>
       <p><strong>Nome:</strong> ${nome}</p>
       <p><strong>Data de Nascimento:</strong> ${nascimentoBr}</p>
       <p><strong>UF:</strong> ${uf}</p>
       <p><strong>Preferências:</strong> ${preferencias.length ? preferencias.join(', ') : 'Nenhuma selecionada'}</p>
+      <hr>
     `;
 
   const resultadoDiv = document.getElementById('resultado');

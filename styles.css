@@ -24,7 +24,7 @@ body {
 }
 
 /* TÍTULOS */
-h2 {
+h2, h3 {
   text-align: center;
   color: #2a6f97;
   margin-bottom: 20px;
@@ -41,7 +41,7 @@ form input[type="text"],
 form input[type="email"],
 form input[type="date"],
 form select {
-  width: 100%;
+  /*width: 100%;*/
   padding: 10px;
   border: 1px solid #d1d5db;
   border-radius: 4px;
@@ -84,7 +84,7 @@ fieldset input[type="checkbox"] {
 /* BOTÃO */
 button {
   display: block;
-  width: 100%;
+  /*width: 100%;*/
   background-color: #2a6f97;
   color: #fff;
   border: none;
