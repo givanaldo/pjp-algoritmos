@@ -1,6 +1,6 @@
 function exibir() {
-	let nome = document.querySelector('#nome').value;
-	let email = document.querySelector('#email').value;
+	let nome = document.getElementById("nome").value
+	let email = document.getElementById("email").value
 	let div = document.getElementById("resultado")
-	div.innerHTML = `Nome: ${nome}<br>E-mail: ${email}`
+	div.innerHTML = `Nome: ${nome} || E-mail: ${email}`
 }
