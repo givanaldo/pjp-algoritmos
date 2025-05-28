@@ -8,9 +8,9 @@ function informaprimo() {
         }
     }
     if (primo) {
-        document.getElementById("resultado").innerHTML = "O número é primo"
+        alert("O número é primo")
     } else {
-        document.getElementById("resultado").innerHTML = "O número não é primo"
+        alert("O número não é primo")
     }
 }
 
