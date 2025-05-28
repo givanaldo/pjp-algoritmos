@@ -8,6 +8,7 @@ function exibir(event) {
 	  let nome = document.querySelector('#nome').value;
 	  let email = document.querySelector('#email').value;
 
-		// A partir daqui, você pode usar esses valores
-	  alert(`Nome: ${nome}\nE-mail: ${email}`);
+	  //alert(`Nome: ${nome}\nE-mail: ${email}`);
+	  document.getElementById("resultado").innerHTML = 
+	  		`Nome: ${nome}<br>E-mail: ${email}`
 }
