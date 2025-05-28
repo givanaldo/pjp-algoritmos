@@ -7,10 +7,11 @@ function informaprimo() {
             break
         }
     }
+    let div = document.getElementById("resultado")
     if (primo) {
-        alert("O número é primo")
+        div.innerHTML = "O número é primo"
     } else {
-        alert("O número não é primo")
+        div.innerHTML = "O número não é primo"
     }
 }
 
