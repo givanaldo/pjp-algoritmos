@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulário de Dados</title>
+</head>
+<body>
+<div id="container">
+  <h2>Formulário de Dados</h2>
+
+  <form id="meuFormulario">
+    Nome: <input type="text" id="nome" name="nome" required><br><br>
+    Data de Nascimento: <input type="date" id="nascimento" name="nascimento" required><br><br>
+    UF:
+    <select id="uf" name="uf" required>
+      <option value="">Selecione...</option>
+      <option value="AC">AC</option>
+      <option value="AL">AL</option>
+      <option value="AP">AP</option>
+      <option value="AM">AM</option>
+      <option value="BA">BA</option>
+      <option value="CE">CE</option>
+      <option value="DF">DF</option>
+      <option value="ES">ES</option>
+      <option value="GO">GO</option>
+      <option value="MA">MA</option>
+      <option value="MT">MT</option>
+      <option value="MS">MS</option>
+      <option value="MG">MG</option>
+      <option value="PA">PA</option>
+      <option value="PB">PB</option>
+      <option value="PR">PR</option>
+      <option value="PE">PE</option>
+      <option value="PI">PI</option>
+      <option value="RJ">RJ</option>
+      <option value="RN">RN</option>
+      <option value="RS">RS</option>
+      <option value="RO">RO</option>
+      <option value="RR">RR</option>
+      <option value="SC">SC</option>
+      <option value="SP">SP</option>
+      <option value="SE">SE</option>
+      <option value="TO">TO</option>
+    </select><br><br>
+
+    <fieldset>
+      <legend>Preferências:</legend>
+      <label><input type="checkbox" name="preferencias" value="cinema"> Cinema</label><br>
+      <label><input type="checkbox" name="preferencias" value="praia"> Praia</label><br>
+      <label><input type="checkbox" name="preferencias" value="shopping"> Shopping</label><br>
+      <label><input type="checkbox" name="preferencias" value="restaurante"> Restaurante</label><br>
+      <label><input type="checkbox" name="preferencias" value="viagem"> Viagem</label><br>
+    </fieldset><br>
+
+    <button type="button" onclick="cadastrar()">Enviar</button>
+  </form>
+
+  <div id="resultado"></div>
+</div>
+  <script src="formcadastro.js"></script>
+</body>
+</html>
