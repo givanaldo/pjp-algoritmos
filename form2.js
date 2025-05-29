@@ -1,20 +1,8 @@
-function submeter() {
-  // Dispara uma caixa de confirmação
-  let confirma = confirm("Você confirma a ação?");
-
-  if (confirma) {
-    // Se o usuário clicar em “OK”, obtém valores dos campos
-    let nome  = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-
-    // Atualiza o DOM para exibir os dados recebidos
-    document.getElementById("resultado").innerHTML =
-      "<h3>Informações Recebidas</h3>" +
-      `<p>Nome: ${nome}</p>` +
-      `<p>E-mail: ${email}</p>`;
-  }
-  else {
-    // Se o usuário clicar em “Cancelar”, exibe mensagem de cancelamento
-    document.getElementById("resultado").innerHTML = "<h2>Ação cancelada</h2>";
-  }
+function exibir() {
+	let nome = document.getElementById("nome").value
+	let email = document.getElementById("email").value
+	let div = document.getElementById("resultado")
+	div.innerHTML = div.innerHTML + `Nome: ${nome} || E-mail: ${email}<br>`
+	document.getElementById("nome").value = ""
+	document.getElementById("email").value = ""
 }
